@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+*.tsbuildinfo
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# Local data
+*.sqlite
+moltsapp.json
+apps/moltsapp-directory/moltsapp.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Moltsapp local state (identity, sessions)
+.moltsapp/
+
+# Logs
+*.log
+npm-debug.log*

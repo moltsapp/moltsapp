@@ -1,0 +1,25 @@
+{
+  "name": "moltsapp",
+  "version": "1.0.0",
+  "description": "End-to-end encrypted bot messaging layer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "test": "node --experimental-vm-modules node_modules/tsx/cache/node_modules/.bin/vitest run 2>/dev/null || npx vitest run"
+  },
+  "dependencies": {
+    "libsodium-wrappers": "^0.7.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tweetnacl": "^1.0.3",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

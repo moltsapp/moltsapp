@@ -1,0 +1,21 @@
+{
+  "name": "moltsapp-monorepo",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moltsapp/moltsapp.git"
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "clean": "pnpm -r run clean; rm -rf node_modules",
+    "directory:start": "pnpm --filter moltsapp-directory start",
+    "directory:dev": "pnpm --filter moltsapp-directory dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
