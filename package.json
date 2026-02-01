@@ -3,7 +3,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/moltsapp/moltsapp.git"
+    "url": "https://github.com/kingtitus3/moltsapp.git"
   },
   "scripts": {
     "build": "pnpm -r run build",
